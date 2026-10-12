@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{pageTitle}}</title>
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('ae-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preload" href="{{root}}assets/fonts/ibm-plex-mono-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{root}}assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{root}}assets/css/style.css">
+<script src="{{root}}assets/js/main.js" defer></script>
+{{demoScripts}}
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="{{root}}">OLIVER AEMISEGGER</a>
+    <span class="crumb">After Effects Basics</span>
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Show shortcuts for">
+        <button type="button" data-os="mac" aria-pressed="true">Mac</button>
+        <button type="button" data-os="win" aria-pressed="false">Win</button>
+      </div>
+      <button type="button" class="theme-btn" aria-label="Colour theme">Auto</button>
+    </div>
+  </div>
+</header>
+
+<div class="page" id="top">
+{{sidebar}}
+
+  <main id="content">
+    <header class="lesson-head">
+      <div class="chapter"><b>{{chapter}}</b> · {{section}}</div>
+      <h1>{{title}}</h1>
+      <div class="meta">Oliver Aemisegger · {{readTime}} min read</div>
+      {{intro}}
+      <div class="outcomes prose">
+        <p>This section enables you to</p>
+        <ul>
+{{outcomes}}
+        </ul>
+      </div>
+    </header>
+
+{{main}}
+
+    <nav class="pager" aria-label="Sections">
+      {{prev}}
+      {{next}}
+    </nav>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>© 2026 Oliver Aemisegger · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></span>
+    <a href="https://luckydumpling.github.io/motion-archive/">Motion Design Archive</a>
+  </div>
+</footer>
+{{reload}}
+</body>
+</html>

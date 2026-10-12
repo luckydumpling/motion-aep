@@ -1,0 +1,19 @@
+{
+  "name": "motion-aep",
+  "version": "1.0.0",
+  "description": "After Effects Basics: micro lessons for motion designers",
+  "scripts": {
+    "dev": "node dev.js",
+    "build": "node build.js"
+  },
+  "author": "Oliver Aemisegger",
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  }
+}
